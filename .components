@@ -1,0 +1,7 @@
+--- 
+:test: cucumber
+:renderer: haml
+:script: none
+:mock: none
+:orm: sequel
+:stylesheet: none
