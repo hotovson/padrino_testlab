@@ -6,3 +6,30 @@ http://www.padrinorb.com/guides/blog-tutorial
 This project was generated with:
 padrino g project padrino_testlab -t cucumber -d sequel -b
 
+In Gemfile use:
+gem 'rake', "0.8.7"
+
+In features/support/env.rb comment out:
+require 'spec/expectations'
+# require 'spec/expectations'
+
+  'cucumber features' should now work
+
+
+padrino g admin
+
+bundle exec padrino rake sq:migrate:auto
+bundle exec padrino rake sq:migrate:up
+bundle exec padrino rake seed
+
+padrino g model task title:string body:text url:string completed:integer
+
+# edit migration to add timestamp
+
+padrino g controller tasks get:index get:show
+
+# edit controllers and views
+
+# create admin page
+padrino g admin_page task
+
