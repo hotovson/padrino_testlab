@@ -1,0 +1,4 @@
+.task
+  .title= link_to task.title, url_for(:tasks, :show, :id => task.id)
+  .date= time_ago_in_words(task.tstamp || Time.now) + ' ago'
+  .body= simple_format(task.body)

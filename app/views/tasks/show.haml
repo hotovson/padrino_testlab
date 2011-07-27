@@ -1,0 +1,7 @@
+- @title = @task.title
+#show
+  .task
+    .title= @task.title
+    .date= time_ago_in_words(@task.tstamp || Time.now) + ' ago'
+    .body= simple_format(@task.body)    
+%p= link_to 'View all tasks', url_for(:tasks, :index)

@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (3.0.9)
+    bcrypt-ruby (2.1.4)
     builder (3.0.0)
     capybara (1.0.0)
       mime-types (>= 1.16)
@@ -113,6 +114,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby
   capybara
   cucumber
   haml

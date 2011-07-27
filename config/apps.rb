@@ -23,3 +23,4 @@
 
 # Mounts the core application for this project
 Padrino.mount("PadrinoTestlab").to('/')
+Padrino.mount("Admin").to("/admin")
