@@ -1,7 +1,7 @@
 source :rubygems
 
 # Project requirements
-gem 'rake'
+gem 'rake', '0.8.7'
 gem 'rack-flash'
 gem 'thin' # or mongrel
 
